@@ -1,0 +1,12 @@
+<template>
+    <div>
+        <ul>
+    <template for:each={Accountlist.data} for:item="Accountli">
+        <li key={Accountli.Id}>
+            {Account.Name}
+            {Account.Phone}
+        </li>
+      </template>
+    </ul>
+    </div>
+</template>

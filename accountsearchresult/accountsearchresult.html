@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+
+        <h1>
+            We found following searched account
+        </h1>
+
+        <lightning-datatable
+                key-field="id"
+                data={searchresults}
+                columns={columns}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

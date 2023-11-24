@@ -1,0 +1,62 @@
+<template>
+    <div>
+        <lightning-input 
+          type="text"
+          label="Account Name"
+          value={accountName}
+          onchange={handleOnChangeaccountName}
+        ></lightning-input>
+
+        <lightning-input 
+          type="text"
+          label="Account Phone"
+          value={accountPhone}
+          onchange={handleOnChangeaccountPhone}
+        ></lightning-input>
+
+        <lightning-input 
+          type="text"
+          label="Billing State"
+          value={billingState}
+          onchange={handleOnChangebillingState}
+        ></lightning-input>
+
+        <lightning-input 
+          type="text"
+          label="Billing City"
+          value={billingCity}
+          onchange={handleOnChangebillingCity}
+        ></lightning-input>
+
+        <lightning-input 
+          type="text"
+          label="Billing Street"
+          value={billingStreet}
+          onchange={handleOnChangebillingStreet}
+        ></lightning-input>
+
+
+        <lightning-input 
+          type="text"
+          label="Billing Zipcode"
+          value={billingZipcode}
+          onchange={handleOnChangebillingZipcode}
+        ></lightning-input>
+
+        <lightning-button 
+          variant="brand"
+          label="Search Account"
+          title="Click here to intiate the search" 
+          onclick={intiateSearch} 
+        ></lightning-button>
+
+        <ul>
+        <template for:each={actlist} for:item="Accountli">
+          <li key={Accountli.id}>
+              {Account.Name}
+              {Account.Phone}
+          </li>
+        </template>
+        </ul>
+    </div>
+</template>
